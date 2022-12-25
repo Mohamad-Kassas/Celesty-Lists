@@ -1,0 +1,16 @@
+#navigationBar{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-image: url("../images/spaceBackground2.png")
+    ;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}

@@ -1,0 +1,19 @@
+#signUpButton{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    transition: 0.25s;
+    border-color: #0c164f;
+    border-radius: 4px;
+    background-color: #0c164f;
+    color: #ba1e68;
+    margin-left: 5px;
+    margin-right: 10px;
+    
+}
+
+#signUpButton:hover{
+    color: #0c164f;
+    box-shadow: inset 0 0 0 2em #ba1e68;
+    cursor: pointer;
+}

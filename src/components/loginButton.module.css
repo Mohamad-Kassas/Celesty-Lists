@@ -1,0 +1,18 @@
+#loginButton{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    transition: 0.25s;
+    border-color: #0c164f;
+    border-radius: 4px;
+    background-color: #ba1e68;
+    color: #0c164f;
+    margin-right: 5px;
+    
+}
+
+#loginButton:hover{
+    color: #ba1e68;
+    box-shadow: inset 0 0 0 2em #0c164f;
+    cursor: pointer;
+}
