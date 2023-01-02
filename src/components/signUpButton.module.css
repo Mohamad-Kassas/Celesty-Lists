@@ -7,8 +7,11 @@
     border-radius: 75px;
     min-height: 40px;
     min-width: 75px;
+    aspect-ratio: 16/9;
     cursor: pointer;
     transition: all 0.3s;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 #signUpButton:hover{
@@ -19,4 +22,10 @@
 #signUpButton:active{
     transform: scale(0.97);
     border-style: outset;
+}
+
+@media (min-width: 1000px){
+    #signUpButton{
+        margin-left: 10px
+    }
 }

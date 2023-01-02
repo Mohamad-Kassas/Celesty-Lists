@@ -11,7 +11,6 @@ class NavigationBar extends Component {
     updateScrollStatus() {
         let result = window.pageYOffset <= 10 ? "NoScroll" : "Scrolled"
 
-        console.log(result)
         this.setState({scrollStatus: result})
     }
     render() { 

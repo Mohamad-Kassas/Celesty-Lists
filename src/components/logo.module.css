@@ -4,4 +4,14 @@
     height: 90%;
     margin: 5px;
     margin-left: 20px;
+    margin-top: 15px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+@media (min-width: 1000px){
+    #logo{
+        margin-left: 50px;
+        transform: scale(1.1);
+    }
 }

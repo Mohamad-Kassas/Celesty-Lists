@@ -89,19 +89,19 @@
   }
   
   .cardGroup:hover > .bigCard:nth-child(2) {
-    transform: translate(-170%, 10%) rotate(0deg);
+    transform: translate(-180%, 10%) rotate(0deg);
   }
   
   .cardGroup:hover > .bigCard:nth-child(4) {
-    transform: translate(-57.5%, 10%) rotate(0deg);
+    transform: translate(-62.5%, 10%) rotate(0deg);
   }
   
   .cardGroup:hover > .bigCard:nth-child(6) {
-    transform: translate(57.5%, 10%) rotate(0deg);
+    transform: translate(62.5%, 10%) rotate(0deg);
   }
   
   .cardGroup:hover > .bigCard:nth-child(8) {
-    transform: translate(170%, 10%) rotate(0deg);
+    transform: translate(180%, 10%) rotate(0deg);
   }
   
   .cardGroup:hover > .littleCard:nth-child(1) {
@@ -119,4 +119,90 @@
   
   .cardGroup:hover > .littleCard:nth-child(7) {
     transform: translate(170%, 140%) rotate(15deg);
+  }
+
+
+
+
+
+
+  @media (max-width: 1000px){
+    .cardGroup{
+      scale: 1.1
+    }
+    
+    .cardGroup:hover > .bigCard:nth-child(2) {
+      transform: translate(-70%, 70%) rotate(0deg);
+    }
+    
+    .cardGroup:hover > .bigCard:nth-child(4) {
+      transform: translate(-70%, -40%) rotate(0deg);
+    }
+    
+    .cardGroup:hover > .bigCard:nth-child(6) {
+      transform: translate(70%, 70%) rotate(0deg);
+    }
+    
+    .cardGroup:hover > .bigCard:nth-child(8) {
+      transform: translate(70%, -40%) rotate(0deg);
+    }
+    
+    .cardGroup:hover > .littleCard:nth-child(1) {
+      transform: translate(300%, -200%) rotate(-15deg);
+    }
+    
+    .cardGroup:hover > .littleCard:nth-child(3) {
+      
+      transform: translate(-400%, 160%) rotate(-15deg);
+    }
+    
+    .cardGroup:hover > .littleCard:nth-child(5) {
+      transform: translate(-390%, -220%) rotate(15deg);
+    }
+    
+    .cardGroup:hover > .littleCard:nth-child(7) {
+      transform: translate(300%, 170%) rotate(15deg);
+    }
+  }
+
+  @media (max-width: 700px){
+    .cardGroup{
+      scale: 0.9;
+      width: 30vmin;
+    }
+  }
+
+  @media (max-width: 500px){
+    .cardGroup > .bigCard:nth-child(2) {
+      transform: translate(-70%, 70%) rotate(0deg);
+    }
+    
+    .cardGroup > .bigCard:nth-child(4) {
+      transform: translate(-70%, -40%) rotate(0deg);
+    }
+    
+    .cardGroup > .bigCard:nth-child(6) {
+      transform: translate(70%, 70%) rotate(0deg);
+    }
+    
+    .cardGroup > .bigCard:nth-child(8) {
+      transform: translate(70%, -40%) rotate(0deg);
+    }
+    
+    .cardGroup > .littleCard:nth-child(1) {
+      transform: translate(300%, -200%) rotate(-15deg);
+    }
+    
+    .cardGroup > .littleCard:nth-child(3) {
+      
+      transform: translate(-400%, 160%) rotate(-15deg);
+    }
+    
+    .cardGroup > .littleCard:nth-child(5) {
+      transform: translate(-390%, -220%) rotate(15deg);
+    }
+    
+    .cardGroup > .littleCard:nth-child(7) {
+      transform: translate(300%, 170%) rotate(15deg);
+    }
   }

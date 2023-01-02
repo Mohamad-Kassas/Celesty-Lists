@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+
+.landingPagePhraseHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    
+}
+
+.landingPagePhraseHeader{
+    color: #fb8500;
+    font-family: 'Dosis', sans-serif;
+    font-size: 7vw;
+    font-style: italic;
+    max-width: 50vw;
+    margin: 0;
+}
+
+.landingPagePhraseSpan{
+    background-image: linear-gradient(
+        transparent calc(65% - 5px),
+        #023047 5px);
+      background-size: 0;
+      background-repeat: no-repeat;
+      display: inline;
+      transition: 0.5s ease;
+}
+
+.landingPagePhraseSpan:hover{
+    background-size: 100%;
+}
+
+.celestyCloudImage{
+    max-height: 30vw;
+    user-select: none;
+    -webkit-user-drag: none;
+}
