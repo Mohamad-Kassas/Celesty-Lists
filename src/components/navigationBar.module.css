@@ -1,11 +1,10 @@
 #navigationBar{
     display: flex;
-    position: fixed;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 80px;
-    background-image: url("../images/spaceBackground2.png")
     ;
 }
 

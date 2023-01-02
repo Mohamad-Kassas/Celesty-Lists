@@ -1,10 +1,11 @@
-import './App.css';
 import React from 'react';
-import NavigationBar from "./components/navigationBar"
+import LandingPage from './components/landingPage';
+import Background from "./components/background"
+
 
 function App() {
   return (
-    <NavigationBar/>
+    <LandingPage></LandingPage>
   );
 }
 
