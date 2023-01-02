@@ -9,14 +9,13 @@ class landingPage extends Component {
     let background = document.getElementById("body")
     console.log(background)
     return (
-
-      <div className={styles.body} id="body">
+      <React.Fragment>
         <NavigationBar></NavigationBar>
         <CardGroup></CardGroup>
         <div className={styles.test}>
             <p>Hello there</p>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

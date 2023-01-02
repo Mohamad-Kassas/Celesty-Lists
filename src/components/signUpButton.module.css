@@ -1,19 +1,22 @@
-#signUpButton{
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-    transition: 0.25s;
-    border-color: #0c164f;
-    border-radius: 4px;
-    background-color: #0c164f;
-    color: #ba1e68;
+#signUpButton {
+    background-color: #03045e;
+    border-color: #fb8500;
+    color: white;
     margin-left: 5px;
-    margin-right: 10px;
-    
+    margin-right: 3vw;
+    border-radius: 75px;
+    min-height: 40px;
+    min-width: 75px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 #signUpButton:hover{
-    color: #0c164f;
-    box-shadow: inset 0 0 0 2em #ba1e68;
-    cursor: pointer;
+    transform: scale(1.03);
+    filter: brightness(85%);
+}
+
+#signUpButton:active{
+    transform: scale(0.97);
+    border-style: outset;
 }

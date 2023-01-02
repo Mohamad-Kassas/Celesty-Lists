@@ -1,18 +1,21 @@
-#loginButton{
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-    transition: 0.25s;
-    border-color: #0c164f;
-    border-radius: 4px;
-    background-color: #ba1e68;
-    color: #0c164f;
+#loginButton {
+    background-color: #fb8500;
+    border-color: #03045e;
+    color: white;
     margin-right: 5px;
-    
+    border-radius: 75px;
+    min-height: 40px;
+    min-width: 75px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 #loginButton:hover{
-    color: #ba1e68;
-    box-shadow: inset 0 0 0 2em #0c164f;
-    cursor: pointer;
+    transform: scale(1.03);
+    filter: brightness(85%);
+}
+
+#loginButton:active{
+    transform: scale(0.97);
+    border-style: outset;
 }

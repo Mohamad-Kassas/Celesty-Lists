@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPage from './components/landingPage';
-import Background from "./components/background"
+import LandingPagePhrase from "./components/landingPagePhrase"
 
 
 function App() {

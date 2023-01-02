@@ -1,0 +1,26 @@
+.navigationBarNoScroll{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+.navigationBarScrolled{
+    display: flex;
+    position: fixed;
+    background-color: #071220;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
