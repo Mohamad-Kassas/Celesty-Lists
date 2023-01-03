@@ -1,0 +1,29 @@
+.footerHolder {
+    display: flex;
+    height: 20vw;
+    background-color: #fb8500;
+    justify-content: space-around;
+}
+
+.leftHalfDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.footerHeader {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-size: 4vw;
+}
+
+.websiteCreatedWith{
+    font-size: 2vw;
+}
+
+/* @media (max-width: 500px){
+    .websiteCreatedWith{
+        scale: 0.7;
+    }
+} */

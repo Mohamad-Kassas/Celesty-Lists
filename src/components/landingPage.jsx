@@ -3,6 +3,7 @@ import styles from "./landingPage.module.css"
 import NavigationBar from "./navigationBar";
 import CardGroup from "./cardGroup";
 import LandingPagePhrase from "./landingPagePhrase";
+import Footer from "./footer";
 
 class landingPage extends Component {
   state = {};
@@ -14,9 +15,7 @@ class landingPage extends Component {
         <NavigationBar></NavigationBar>
         <LandingPagePhrase></LandingPagePhrase>
         <CardGroup></CardGroup>
-        <div className={styles.test}>
-            <p>Hello there</p>
-        </div>
+        <Footer></Footer>
       </React.Fragment>
     );
   }
