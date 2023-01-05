@@ -4,7 +4,6 @@ import './index.css';
 import "font-awesome/css/font-awesome.min.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import logo from "./images/logo.png"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
