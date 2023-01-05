@@ -69,19 +69,19 @@
 
 
   .littleCard:nth-child(1) {
-    background-image: url("../images/celestyRocket.png");
+    background-image: url("../../images/celestyRocket.png");
   }
   
   .littleCard:nth-child(3) {
-    background-image: url("../images/celestyIceCream.png");
+    background-image: url("../../images/celestyIceCream.png");
   }
   
   .littleCard:nth-child(5) {
-    background-image: url("../images/celestyJar.png");
+    background-image: url("../../images/celestyJar.png");
   }
   
   .littleCard:nth-child(7) {
-    background-image: url("../images/celestyStar.png");
+    background-image: url("../../images/celestyStar.png");
   }
 
   .cardGroup:hover > .littleCard, .bigCard {  

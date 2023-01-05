@@ -20,10 +20,11 @@
 
 .websiteCreatedWith{
     font-size: 2vw;
+    user-select: none;
 }
 
-/* @media (max-width: 500px){
-    .websiteCreatedWith{
-        scale: 0.7;
-    }
-} */
+.rightHalfImage{
+    margin: 5px;
+    user-select: none;
+    -webkit-user-drag: none;
+}

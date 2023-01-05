@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GoogleSignUpButton from "./googleSignUpButton";
 import styles from "./footer.module.css";
-import celestyDesk from "../images/celestyDesk.png";
+import celestyDesk from "../../images/celestyDesk.png";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";

@@ -15,7 +15,6 @@
 }
 
 #signUpButton:hover{
-    transform: scale(1.03);
     filter: brightness(85%);
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./landingPagePhrase.module.css";
-import celestyCloud from "../images/celestyCloud.png";
+import celestyCloud from "../../images/celestyCloud.png";
 
 class landingPagePhrase extends Component {
   state = {};

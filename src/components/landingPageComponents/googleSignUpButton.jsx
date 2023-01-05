@@ -11,7 +11,8 @@ class googleSignUpButton extends Component {
           width: "15vw",
           height: "7vh",
           display: "block",
-          fontSize: "2vw"
+          fontSize: "2vw",
+          userSelect: "none",
         }}
       >
         Temp Button
