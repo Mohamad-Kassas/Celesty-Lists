@@ -1,6 +1,6 @@
 import React from "react";
 import LandingPage from "./components/landingPage";
-import Popup from "./components/PopupComponents/popup";
+// import Popup from "./components/PopupComponents/popup";
 
 function App() {
   return (
