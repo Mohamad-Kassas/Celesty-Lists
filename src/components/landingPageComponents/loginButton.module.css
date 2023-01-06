@@ -1,6 +1,7 @@
 #loginButton {
+    font-family: 'Poppins', sans-serif;
     background-color: #fb8500;
-    border-color: #03045e;
+    border-color: #14213d;
     color: white;
     margin-right: 5px;
     border-radius: 75px;
@@ -25,5 +26,17 @@
 @media (min-width: 1000px){
     #loginButton{
         margin-right: 10px
+    }
+}
+
+@media (max-width: 700px){
+    #loginButton{
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 500px){
+    #loginButton{
+        scale: 0.7;
     }
 }

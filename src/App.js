@@ -1,10 +1,13 @@
-import React from 'react';
-import Popup from './components/PopupComponents/popup';
-
+import React from "react";
+import LandingPage from "./components/landingPage";
+import Popup from "./components/PopupComponents/popup";
 
 function App() {
   return (
-    <Popup></Popup>
+    <React.Fragment>
+      {/* <Popup login={true} signUp={false}></Popup> */}
+      <LandingPage></LandingPage>
+    </React.Fragment>
   );
 }
 

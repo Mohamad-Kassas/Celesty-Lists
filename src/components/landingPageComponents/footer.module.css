@@ -13,12 +13,13 @@
 }
 
 .footerHeader {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 4vw;
 }
 
 .websiteCreatedWith{
+    font-family: 'Poppins', sans-serif;
     font-size: 2vw;
     user-select: none;
 }

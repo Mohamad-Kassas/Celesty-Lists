@@ -1,6 +1,7 @@
 #signUpButton {
-    background-color: #03045e;
-    border-color: #fb8500;
+    font-family: 'Poppins', sans-serif;
+    background-color: #14213d;
+    border: 2px solid #fb8500;
     color: white;
     margin-left: 5px;
     margin-right: 3vw;
@@ -21,10 +22,23 @@
 #signUpButton:active{
     transform: scale(0.97);
     border-style: outset;
+    box-shadow: none;
 }
 
 @media (min-width: 1000px){
     #signUpButton{
         margin-left: 10px
+    }
+}
+
+@media (max-width: 700px){
+    #signUpButton{
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 500px){
+    #signUpButton{
+        scale: 0.7;
     }
 }

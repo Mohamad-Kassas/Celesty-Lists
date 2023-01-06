@@ -13,6 +13,7 @@ class googleSignUpButton extends Component {
           display: "block",
           fontSize: "2vw",
           userSelect: "none",
+          fontFamily:"Poppins, sans-serif",
         }}
       >
         Temp Button
