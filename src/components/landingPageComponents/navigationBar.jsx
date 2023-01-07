@@ -1,26 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import "./navigationBar.css"
 import Logo from "./logo"
 import LoginButton from "./loginButton"
 import SignUpButton from "./signUpButton"
 
 class NavigationBar extends Component {
-    state = {
-        scrollStatus: "NoScroll"
+    constructor(props){
+        super(props)
+        this.state = {
+            scrollStatus: "NoScroll"
+        }
+
+        this.updateScrollStatus = this.updateScrollStatus.bind(this)
     }
+    
     updateScrollStatus() {
         let result = window.pageYOffset <= 10 ? "NoScroll" : "Scrolled"
 
         this.setState({scrollStatus: result})
     }
+
+    componentDidMount() {
+        document.addEventListener("scroll", this.updateScrollStatus)
+    }
+
     render() { 
-        window.addEventListener("scroll", this.updateScrollStatus())
         return (
             <div className={"navigationBar" + this.state.scrollStatus}>
                 <Logo/>
                 <div className="buttons">
-                <LoginButton/>
-                <SignUpButton/>
+                <LoginButton loginOnClick={this.props.loginOnClick}/>
+                <SignUpButton signUpOnClick={this.props.signUpOnClick}/>
                 </div>
             </div>
         );

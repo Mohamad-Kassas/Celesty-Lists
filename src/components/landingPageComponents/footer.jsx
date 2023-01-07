@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import GoogleSignUpButton from "./googleSignUpButton";
+import FooterButton from "./footerButton";
 import styles from "./footer.module.css";
 import celestyDesk from "../../images/celestyDesk.png";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";
-import {DiCss3} from "react-icons/di"
+import { DiCss3 } from "react-icons/di";
 
 class footer extends Component {
   render() {
@@ -15,11 +15,13 @@ class footer extends Component {
           <span className={styles.footerHeader}>
             Start using CelestyLists today:
           </span>
-          <GoogleSignUpButton></GoogleSignUpButton>
+          <FooterButton
+            getStartedOnClick={this.props.getStartedOnClick}
+          ></FooterButton>
           <span className={styles.websiteCreatedWith}>
             Website created using <FaReact /> <IoLogoJavascript />{" "}
             <AiFillHtml5 />
-            <DiCss3/>
+            <DiCss3 />
           </span>
         </div>
         <img

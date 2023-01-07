@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
@@ -22,15 +22,12 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .popupWindow::-webkit-scrollbar {
   display: none;
-}
-
-.example {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .header {
@@ -40,20 +37,20 @@
   margin-left: 10%;
 }
 
-.emailDiv,
+.usernameDiv,
 .passwordDiv {
   position: relative;
   padding: 15px 0 0;
   width: 80%;
   align-self: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.emailDiv {
+.usernameDiv {
   margin-top: 10px;
 }
 
-.emailInput,
+.usernameInput,
 .passwordInput {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -80,7 +77,7 @@
   color: transparent;
 }
 
-:placeholder-shown ~ .emailLabel {
+:placeholder-shown ~ .usernameLabel {
   font-size: 1.2rem;
   cursor: text;
   top: 20px;
@@ -92,7 +89,7 @@
   top: 20px;
 }
 
-.emailLabel,
+.usernameLabel,
 .passwordLabel {
   font-family: "Poppins", sans-serif;
   position: absolute;
@@ -104,7 +101,7 @@
   user-select: none;
 }
 
-.emailInput:focus,
+.usernameInput:focus,
 .passwordInput:focus {
   padding-bottom: 5px;
   border-width: 3px;
@@ -112,7 +109,7 @@
   border-image-slice: 1;
 }
 
-.emailInput:focus ~ .emailLabel {
+.usernameInput:focus ~ .usernameLabel {
   position: absolute;
   top: 0;
   display: block;
@@ -189,32 +186,49 @@
   transform: scale(0.98);
 }
 
-.closeButtonDiv{
-    align-self: flex-end;
-    margin-right: 10%;
+.closeButtonDiv {
+  align-self: flex-end;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.closeButton {
+  position: fixed;
+  scale: 1.3;
+  cursor: pointer;
+  transition: 0.12s ease-in;
+  padding: 5px;
+}
+
+.closeButton:hover {
+  filter: brightness(80%);
+}
+
+.closeButton:active {
+  scale: 1.2;
+}
+
+@media (max-width: 500px) {
+  .closeButtonDiv {
+    margin-right: 14%;
     margin-top: 2%;
+  }
 }
 
-.closeButton{
-    position: fixed;
-    scale: 1.3;
-    cursor: pointer;
-    transition: 0.12s ease-in;
-    padding: 5px;
+.passwordErrorMessagesDiv, .usernameErrorMessagesDiv{
+  margin-top: 7px;
+  display: none;
+  align-items: center;
 }
 
-.closeButton:hover{
-    filter: brightness(80%);
+.errorIcon{
+  color: #ff0038;
+  margin-right: 4px;
 }
 
-.closeButton:active{
-    scale: 1.2;
-}
-
-
-@media (max-width: 500px){
-    .closeButtonDiv{
-        margin-right: 14%;
-        margin-top: 2%;
-    }
-}
+.usernameErrorMessages, .passwordErrorMessages{
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  color: #ff0038;
+  }
