@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import "./navigationBar.css"
 import Logo from "./logo"
 import LoginButton from "./loginButton"
